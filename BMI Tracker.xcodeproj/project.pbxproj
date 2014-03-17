@@ -22,6 +22,8 @@
 		6C14DD4018D3FCFF0007B260 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C14DD1F18D3FCFF0007B260 /* UIKit.framework */; };
 		6C14DD4818D3FCFF0007B260 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C14DD4618D3FCFF0007B260 /* InfoPlist.strings */; };
 		6C14DD4A18D3FCFF0007B260 /* BMI_TrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C14DD4918D3FCFF0007B260 /* BMI_TrackerTests.m */; };
+		6C3ADE8A18D6175500E54D39 /* BMICalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3ADE8918D6175500E54D39 /* BMICalculatorBrain.m */; };
+		6CAE8C7E18D41461002E49A5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAE8C7D18D41461002E49A5 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		6C14DD4518D3FCFF0007B260 /* BMI TrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BMI TrackerTests-Info.plist"; sourceTree = "<group>"; };
 		6C14DD4718D3FCFF0007B260 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6C14DD4918D3FCFF0007B260 /* BMI_TrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMI_TrackerTests.m; sourceTree = "<group>"; };
+		6C3ADE8818D6175500E54D39 /* BMICalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMICalculatorBrain.h; sourceTree = "<group>"; };
+		6C3ADE8918D6175500E54D39 /* BMICalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMICalculatorBrain.m; sourceTree = "<group>"; };
+		6CAE8C7D18D41461002E49A5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +69,7 @@
 			files = (
 				6C14DD1E18D3FCFF0007B260 /* CoreGraphics.framework in Frameworks */,
 				6C14DD2018D3FCFF0007B260 /* UIKit.framework in Frameworks */,
+				6CAE8C7E18D41461002E49A5 /* MapKit.framework in Frameworks */,
 				6C14DD1C18D3FCFF0007B260 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +109,7 @@
 		6C14DD1A18D3FCFF0007B260 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6CAE8C7D18D41461002E49A5 /* MapKit.framework */,
 				6C14DD1B18D3FCFF0007B260 /* Foundation.framework */,
 				6C14DD1D18D3FCFF0007B260 /* CoreGraphics.framework */,
 				6C14DD1F18D3FCFF0007B260 /* UIKit.framework */,
@@ -122,6 +129,8 @@
 				6C14DD3418D3FCFF0007B260 /* CUDBMIViewController.m */,
 				6C14DD3618D3FCFF0007B260 /* Images.xcassets */,
 				6C14DD2218D3FCFF0007B260 /* Supporting Files */,
+				6C3ADE8818D6175500E54D39 /* BMICalculatorBrain.h */,
+				6C3ADE8918D6175500E54D39 /* BMICalculatorBrain.m */,
 			);
 			path = "BMI Tracker";
 			sourceTree = "<group>";
@@ -203,6 +212,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "University of Colorado";
 				TargetAttributes = {
+					6C14DD1718D3FCFF0007B260 = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					6C14DD3B18D3FCFF0007B260 = {
 						TestTargetID = 6C14DD1718D3FCFF0007B260;
 					};
@@ -255,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C14DD2C18D3FCFF0007B260 /* CUDBMIAppDelegate.m in Sources */,
+				6C3ADE8A18D6175500E54D39 /* BMICalculatorBrain.m in Sources */,
 				6C14DD3518D3FCFF0007B260 /* CUDBMIViewController.m in Sources */,
 				6C14DD2818D3FCFF0007B260 /* main.m in Sources */,
 			);
@@ -471,6 +488,7 @@
 				6C14DD4F18D3FCFF0007B260 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C14DD5018D3FCFF0007B260 /* Build configuration list for PBXNativeTarget "BMI TrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +497,7 @@
 				6C14DD5218D3FCFF0007B260 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

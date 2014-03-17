@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BMICalculatorBrain.h"
 
 @interface CUDBMIViewController : UIViewController
+{
+    IBOutlet UILabel *display;
+    BMICalculatorBrain *brain;
+}
+
+- (IBAction)digitPressed:(id)sender;
+- (IBAction)calcPressed:(id)sender;
 
 @end

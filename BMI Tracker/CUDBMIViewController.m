@@ -7,12 +7,22 @@
 //
 
 #import "CUDBMIViewController.h"
+#import <UIKit/UIKit.h>
 
 @interface CUDBMIViewController ()
 
 @end
 
 @implementation CUDBMIViewController
+
+- (BMICalculatorBrain *) brain
+{
+    if(!brain)
+    {
+        brain = [[BMICalculatorBrain alloc] init];
+    }
+    return brain;
+}
 
 - (void)viewDidLoad
 {
@@ -24,6 +34,18 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)digitPressed:(id)sender
+{
+    NSString *value = [sender text];
+    NSString *label = [[sender titleLabel] text];
+    
+}
+
+- (IBAction)calcPressed:(id)sender
+{
+    ;
 }
 
 @end
